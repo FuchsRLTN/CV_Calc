@@ -41,7 +41,7 @@ else:
 
 ## Customer Value Displaying
 st.divider()
-st.subheader()"Ertrag pro Kunde")
+st.subheader("Ertrag pro Kunde")
 st.write("Nach 8 Jahren haben Sie pro Kunde einen durchschnittlichen Ertrag von" )
 st.metric("", total_clv)
 st.write("erwirtschaftet.")
