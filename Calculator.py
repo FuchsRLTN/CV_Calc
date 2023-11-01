@@ -28,7 +28,7 @@ if toggle_clvcalc is False:
     st.write("Bruttoertrag im Service p. a.:")
     st.write("462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
-    sales_clv = 2.080
+    sales_clv = 2080
     service_clv = 462
     total_clv = 5776
     
@@ -85,3 +85,14 @@ st.write(service_clv)
 
 lifetime_churn = 5
 lifetime_loyal = 10
+
+total_clv_churn = sales_clv + (service_clv * lifetime_churn)
+total_clv_loyal = sales_clv + (service_clv * lifetime_loyal)
+total_clv_delta = total_clv_loyal - total_clv_churn
+
+st.write(total_clv_churn)
+st.write(total_clv_loyal)
+st.write(total_clv_delta)
+
+
+
