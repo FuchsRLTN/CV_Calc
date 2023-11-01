@@ -26,11 +26,9 @@ st.header("Kundenwert:")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.header("EV-Kunde")
     st.metric(label="EV-Kunde", value=clv_ev)
 
 with col2:
-    st.header("ICE-Kunde")
     st.metric(label="ICE-Kunde", value=clv_ice)
 
 
@@ -38,7 +36,8 @@ with col2:
 
 ## Details CLV Calculation as an expander
 
-with st.expander("Details zur Kundenwertberechnung:"):
-    st.header("Rechenweg")
-
-
+with st.expander("Kundenwert neu berechnen:"):
+    sales_avg_ncprice = st.number_input("Durschnittlicher NW-Preis festlegen")
+    sales_avg_margin = st.number_input("Durchschnittliche Marge festlegen")
+    sales_grprofit_customer = sales_avg_margin / 100 * sales_avg_margin
+    st.write(sales_grprofit_customer)
