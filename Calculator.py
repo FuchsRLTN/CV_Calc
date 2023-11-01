@@ -46,8 +46,9 @@ else:
 
 
 ## Customer Value Displaying
+
 st.subheader("Ertrag pro Kunde")
-st.metric("EURO", total_clv)
+st.info(total_clv)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
 
