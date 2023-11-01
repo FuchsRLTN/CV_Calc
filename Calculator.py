@@ -14,4 +14,7 @@ dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, v
 
 ## Details CLV Calculation as an expander
 
-st.expander("Details zur Kundenwertberechnung:")
+with st.expander("Details zur Kundenwertberechnung:"):
+    st.header("Rechenweg")
+
+    
