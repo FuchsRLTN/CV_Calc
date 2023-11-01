@@ -107,7 +107,7 @@ chart_data = pd.DataFrame(data)
 
 st.dataframe(data)
 
-st.bar_chart(data=chart_data, x="Typ", y="EURO", color="#002C5F")
+st.bar_chart(chart_data)
 
 
 st.divider()
