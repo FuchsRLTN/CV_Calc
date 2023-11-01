@@ -27,12 +27,11 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.header("EV-Kunde")
-    st.metric(clv_ev)
+    st.metric(label="EV-Kunde", value=clv_ev)
 
 with col2:
     st.header("ICE-Kunde")
-    st.metric(clv_ice)
-
+    st.metric(label="ICE-Kunde", value=clv_ice)
 
 
 
