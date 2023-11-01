@@ -94,5 +94,11 @@ st.write(total_clv_churn)
 st.write(total_clv_loyal)
 st.write(total_clv_delta)
 
+bestand_equity_churn = dealer_jvz * total_clv_churn
+bestand_equity_loyal = dealer_jvz * total_clv_loyal
+bestand_equity_delta = bestand_equity_loyal - bestand_equity_churn
 
+st.write(bestand_equity_churn)
+st.write(bestand_equity_loyal)
+st.write(bestand_equity_delta)
 
