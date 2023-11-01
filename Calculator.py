@@ -8,7 +8,7 @@ st.write("")
 st.write("")
 
 
-## Customer Value
+## Customer Value Calculation
 
 
 st.header("Was ist ein Kunde wert?")
@@ -38,8 +38,13 @@ else:
     total_clv = sales_clv + (lifetime * service_clv)
  
 
-st.write("Nach 8 Jahren hat das Autohaus pro Kunde einen durchschnittlichen Ertrag von" )
+
+## Customer Value Displaying
+st.divider()
+st.subheader()"Ertrag pro Kunde")
+st.write("Nach 8 Jahren haben Sie pro Kunde einen durchschnittlichen Ertrag von" )
 st.metric("", total_clv)
+st.write("erwirtschaftet.")
 
 
 
