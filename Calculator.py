@@ -23,6 +23,7 @@ if toggle_clvcalc is False:
     st.write("Bruttoertrag pro Neuwagen:")
     st.write("2.080 EUR (26.000 € x 8%)")
     st.write("")
+    st.write("")
     st.write("Bruttoertrag im Service p. a.:")
     st.write("462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
@@ -48,6 +49,7 @@ else:
 ## Customer Value Displaying
 
 st.write("")
+st.write("")
 clv_str = str(total_clv) + " Euro pro Kunde"
 st.info(clv_str)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
@@ -62,7 +64,7 @@ st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 st.write("")
 st.write("")
 
-dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
+## dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
 ## dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, value=30, step=1)
 st.write("")
 st.divider()
