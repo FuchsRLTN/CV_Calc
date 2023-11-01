@@ -82,9 +82,13 @@ st.divider()
 lifetime_churn = 5
 lifetime_loyal = 10
 
-total_clv_churn = sales_clv
 
-st.write(total_clv_churn)
+
+st.write(total_clv)
+st.write(sales_clv)
+st.write(service_clv)
+
+
 
 
 
