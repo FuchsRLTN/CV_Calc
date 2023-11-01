@@ -107,7 +107,7 @@ chart_data = pd.DataFrame(data)
 
 st.dataframe(data)
 
-st.bar_chart(chart_data)
+st.bar_chart(data=chart_data, *, x= "Kundenbestand", y= "Wert")
 
 
 st.divider()
