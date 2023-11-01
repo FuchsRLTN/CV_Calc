@@ -103,7 +103,9 @@ st.write(bestand_equity_loyal)
 st.write(bestand_equity_delta)
 
 data = [bestand_equity_churn, bestand_equity_loyal] 
-chart_data = pd.DataFrame(data, columns="Kundenbestand Wert")
+chart_data = pd.DataFrame(data)
+
+st.dataframe(data)
 
 st.bar_chart(data=chart_data, x="Typ", y="EURO", color="#002C5F")
 
