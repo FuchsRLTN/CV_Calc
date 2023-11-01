@@ -80,11 +80,8 @@ dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, 
 st.write("")
 st.divider()
 
-
-lifetime_churn = 5
-lifetime_loyal = 10
-
 st.write(sales_clv)
 st.write(service_clv)
 
-
+lifetime_churn = 5
+lifetime_loyal = 10
