@@ -9,7 +9,7 @@ import streamlit as st
 ## Config Dealer Data
 
 dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
-st.write(dealer_jvz)
+dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, value=30, step=1)
 
 
 
