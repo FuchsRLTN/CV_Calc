@@ -102,3 +102,6 @@ st.write(bestand_equity_churn)
 st.write(bestand_equity_loyal)
 st.write(bestand_equity_delta)
 
+st.divider()
+
+
