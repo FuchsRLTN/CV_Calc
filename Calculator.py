@@ -39,5 +39,5 @@ with col2:
 with st.expander("Kundenwert neu berechnen:"):
     sales_avg_ncprice = st.number_input("Durschnittlicher NW-Preis festlegen")
     sales_avg_margin = st.number_input("Durchschnittliche Marge festlegen")
-    sales_grprofit_customer = sales_avg_margin / 100 * sales_avg_margin
+    sales_grprofit_customer = sales_avg_ncprice / 100 * sales_avg_margin
     st.write(sales_grprofit_customer)
