@@ -1,6 +1,7 @@
 import streamlit as st
 
 
+
 ## App Header
 
 st.image("https://i.postimg.cc/qMBkK4nX/HMD-Header-2.png")
@@ -53,23 +54,38 @@ else:
 
 st.write("")
 st.write("")
+
 clv_str = str(total_clv) + " Euro pro Kunde"
 st.info(clv_str)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
+st.write("")
+st.write("")
+st.divider()
+st.write("")
+st.write("")
 
-
-
-
-
+st.subheader("KUNDENBESTAND")
+st.write("")
+st.write("")
 
 ## Config Dealer Data
 st.write("")
 st.write("")
 
-## dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
+dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
 ## dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, value=30, step=1)
 st.write("")
 st.divider()
+
+
+lifetime_churn = 5
+lifetime_loyal = 10
+
+total_clv_churn = sales_clv + (lifetime_churn * service_clv)
+total_clv_loyal = sales_clv + (lifetime_loyal * service_clv)
+
+st.write(total_clv_churn)
+st.write(total_clv_loyal)
 
 
