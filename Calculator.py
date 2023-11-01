@@ -12,4 +12,6 @@ dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, 
 dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, value=30, step=1)
 
 
+## Details CLV Calculation as an expander
 
+st.expander("Details zur Kundenwertberechnung:")
