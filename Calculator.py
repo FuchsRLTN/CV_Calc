@@ -11,15 +11,21 @@ st.write("")
 ## Customer Value Calculation
 
 
-st.header("Was ist ein Kunde wert?")
+st.subheader("KUNDENWERT")
 
 
 
 toggle_clvcalc = st.toggle('Individuell berechnen')
+st.write("")
+
 
 if toggle_clvcalc is False:
-    st.write("Bruttoertrag pro Neuwagen: 2.080 EUR (26.000 € x 8%)")
-    st.write("Bruttoertrag im Service p. a.: 462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
+    st.write("Bruttoertrag pro Neuwagen:")
+    st.write("2.080 EUR (26.000 € x 8%)")
+    st.write("")
+    st.write("Bruttoertrag im Service p. a.:")
+    st.write("462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
+
     total_clv = 5776
     
 else:
@@ -40,11 +46,9 @@ else:
 
 
 ## Customer Value Displaying
-st.divider()
 st.subheader("Ertrag pro Kunde")
-st.write("Nach 8 Jahren haben Sie pro Kunde einen durchschnittlichen Ertrag von" )
-st.metric("", total_clv)
-st.write("erwirtschaftet.")
+st.metric(total_clv,"EUR")
+st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
 
 
@@ -62,31 +66,3 @@ st.write("")
 st.divider()
 
 
-
-
-## Customer Value
-
-clv_ev = 2500
-clv_ice = 5776
-
-
-st.header("Kundenwert:")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.metric(label="EV-Kunde", value=clv_ev)
-
-with col2:
-    st.metric(label="ICE-Kunde", value=clv_ice)
-
-
-
-
-## Details CLV Calculation as an expander
-
-with st.expander("Kundenwert neu berechnen:"):
-    sales_avg_ncprice = st.number_input("Durschnittlicher NW-Preis festlegen")
-    sales_avg_margin = st.number_input("Durchschnittliche Marge festlegen")
-    sales_grprofit_customer = sales_avg_ncprice / 100 * sales_avg_margin
-    st.write(sales_grprofit_customer)
