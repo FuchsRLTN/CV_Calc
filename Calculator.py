@@ -28,6 +28,8 @@ if toggle_clvcalc is False:
     st.write("Bruttoertrag im Service p. a.:")
     st.write("462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
+    sales_clv = 2.080
+    service_clv = 462
     total_clv = 5776
     
 else:
@@ -83,4 +85,6 @@ lifetime_churn = 5
 lifetime_loyal = 10
 
 st.write(sales_clv)
+st.write(service_clv)
+
 
