@@ -47,10 +47,8 @@ else:
 
 ## Customer Value Displaying
 
-
-total_clv_str = str(total_clv)
-st.write(total_clv_str)
-st.info(total_clv_str)
+st.write("")
+st.info(total_clv)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
 
