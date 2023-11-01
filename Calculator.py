@@ -3,12 +3,13 @@ import streamlit as st
 
 ## App Header
 
+st.image("https://i.postimg.cc/zBwgVxrt/HMD-Header.png")
 
 
 ## Config Dealer Data
 
 dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
-dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, value=30, step=1)
+## dealer_bevshare = st.slider("Anteil EV eingeben:", min_value=1, max_value=100, value=30, step=1)
 st.write("")
 st.divider()
 
