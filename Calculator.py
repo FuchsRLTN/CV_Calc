@@ -81,7 +81,6 @@ st.divider()
 
 lifetime_churn = 5
 lifetime_loyal = 10
-
 a = sales_clv
 
 st.write(a)
