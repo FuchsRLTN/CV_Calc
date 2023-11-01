@@ -12,6 +12,21 @@ st.write("")
 
 
 st.header("Was ist ein Kunde wert?")
+
+sales_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=10, step=1)
+sales_avg_ncprice = st.slider("Durschnittlicher NW-Preis (in EUR) festlegen", min_value=10000, max_value=30000, step=500)
+sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
+
+service_avg_revenue = st.slider("Durschnittlicher Umsatz L&T (p.A.; in EUR) festlegen", min_value=0, max_value=5000, step=50)
+service_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=100, step=1)
+service_clv = service_avg_revenue / 100 * service_avg_margin
+
+st.write(sales_clv)
+st.write(service_clv)
+
+lifetime = 8
+total_clv = sales_clv + (lifetime * service_clv)
+
 toggle_clvcalc = st.toggle('Individuell berechnen')
 
 if toggle_clvcalc:
