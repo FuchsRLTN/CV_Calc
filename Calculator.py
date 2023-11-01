@@ -1,5 +1,5 @@
 import streamlit as st
-
+import pandas as pd
 
 
 ## App Header
@@ -101,6 +101,12 @@ bestand_equity_delta = bestand_equity_loyal - bestand_equity_churn
 st.write(bestand_equity_churn)
 st.write(bestand_equity_loyal)
 st.write(bestand_equity_delta)
+
+data = [bestand_equity_churn, bestand_equity_loyal] 
+chart_data = pd.DataFrame(data, columns="Kundenbestand Wert")
+
+st.bar_chart(data=chart_data, x="Typ", y="EURO", color="#002C5F")
+
 
 st.divider()
 
