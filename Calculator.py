@@ -47,8 +47,9 @@ else:
 
 ## Customer Value Displaying
 
+st.write("")
 clv_str = str(total_clv) + " Euro pro Kunde"
-st.info(clv_str, icon="i")
+st.info(clv_str)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
 
