@@ -17,7 +17,7 @@ st.header("Was ist ein Kunde wert?")
 
 toggle_clvcalc = st.toggle('Individuell berechnen')
 
-if toggle_clvcalc:
+if toggle_clvcalc is False:
     st.write("Bruttoertrag pro Neuwagen: 2.080 EUR (26.000 € x 8%)")
     st.write("Bruttoertrag im Service p. a.: 462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
     total_clv = 5776
