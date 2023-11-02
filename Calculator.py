@@ -4,14 +4,14 @@ import pandas as pd
 
 ## App Header
 
-st.image("https://i.postimg.cc/DwCd9dFt/HMD-H3-Kunden-1.png")
+st.image("https://i.postimg.cc/qMBkK4nX/HMD-Header-2.png")
 st.write("")
 st.write("")
 
 
 ## Customer Value: Calculation
 
-st.image("https://i.postimg.cc/26mBKVM1/HMD-H3-Kunden.png")
+st.image("https://i.postimg.cc/DwCd9dFt/HMD-H3-Kunden-1.png")
 
 toggle_clvcalc = st.toggle('Individuell berechnen')
 st.write("")
