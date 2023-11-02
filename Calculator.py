@@ -82,8 +82,8 @@ dealer_loyalty_improvement = st.slider("Kundenbindung erhöhen auf ... Jahre:", 
 st.write("")
 st.divider()
 
-st.write(sales_clv)
-st.write(service_clv)
+## st.write(sales_clv)
+## st.write(service_clv)
 
 
 
@@ -99,9 +99,9 @@ total_clv_churn = sales_clv + (service_clv * lifetime_churn)
 total_clv_loyal = sales_clv + (service_clv * lifetime_loyal)
 total_clv_delta = total_clv_loyal - total_clv_churn
 
-st.write(total_clv_churn)
-st.write(total_clv_loyal)
-st.write(total_clv_delta)
+## st.write(total_clv_churn)
+## st.write(total_clv_loyal)
+## st.write(total_clv_delta)
 
 
 
