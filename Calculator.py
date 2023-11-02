@@ -78,15 +78,22 @@ st.write("")
 st.write("")
 
 dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
-dealer_loyalty_improvement = st.slider("Kundenbindung erhöhen auf:", min_value=6, max_value=10, value=8, step=1)
+dealer_loyalty_improvement = st.slider("Kundenbindung erhöhen auf ... Jahre:", min_value=6, max_value=10, value=8, step=1)
 st.write("")
 st.divider()
 
 st.write(sales_clv)
 st.write(service_clv)
 
+
+
+## Defining the lifetime
+
 lifetime_churn = 5
-lifetime_loyal = 10
+lifetime_loyal = dealer_loyalty_improvement
+
+
+## Calculating clv per churn and loyal custonmer 
 
 total_clv_churn = sales_clv + (service_clv * lifetime_churn)
 total_clv_loyal = sales_clv + (service_clv * lifetime_loyal)
@@ -96,6 +103,48 @@ st.write(total_clv_churn)
 st.write(total_clv_loyal)
 st.write(total_clv_delta)
 
+
+
+## Calculating clv per churn and loyal custonmer - per Year of lifetime
+
+
+total_clv_churn_y1 = sales_clv + (service_clv * 1)
+total_clv_churn_y2 = sales_clv + (service_clv * 2)
+total_clv_churn_y3 = sales_clv + (service_clv * 3)
+total_clv_churn_y4 = sales_clv + (service_clv * 4)
+total_clv_churn_y5 = sales_clv + (service_clv * 5)
+total_clv_churn_y6 = sales_clv + (service_clv * 5)
+total_clv_churn_y7 = sales_clv + (service_clv * 5)
+total_clv_churn_y8 = sales_clv + (service_clv * 5)
+total_clv_churn_y9 = sales_clv + (service_clv * 5)
+total_clv_churn_y10 = sales_clv + (service_clv * 5)
+
+total_clv_loyal_y1 = sales_clv + (service_clv * 1)
+total_clv_loyal_y2 = sales_clv + (service_clv * 2)
+total_clv_loyal_y3 = sales_clv + (service_clv * 3)
+total_clv_loyal_y4 = sales_clv + (service_clv * 4)
+total_clv_loyal_y5 = sales_clv + (service_clv * 5)
+total_clv_loyal_y6 = sales_clv + (service_clv * 6)
+total_clv_loyal_y7 = sales_clv + (service_clv * 7)
+total_clv_loyal_y8 = sales_clv + (service_clv * 8)
+total_clv_loyal_y9 = sales_clv + (service_clv * 9)
+total_clv_loyal_y10 = sales_clv + (service_clv * 10)
+
+total_clv_delta_y1 = sales_clv + (service_clv * 1) - total_clv_churn_y1
+total_clv_delta_y2 = sales_clv + (service_clv * 2) - total_clv_churn_y1
+total_clv_delta_y3 = sales_clv + (service_clv * 3) - total_clv_churn_y1
+total_clv_delta_y4 = sales_clv + (service_clv * 4) - total_clv_churn_y1
+total_clv_delta_y5 = sales_clv + (service_clv * 5) - total_clv_churn_y1
+total_clv_delta_y6 = sales_clv + (service_clv * 6) - total_clv_churn_y1
+total_clv_delta_y7 = sales_clv + (service_clv * 7) - total_clv_churn_y1
+total_clv_delta_y8 = sales_clv + (service_clv * 8) - total_clv_churn_y1
+total_clv_delta_y9 = sales_clv + (service_clv * 9) - total_clv_churn_y1
+total_clv_delta_y10 = sales_clv + (service_clv * 10) - total_clv_churn_y1
+
+
+
+## Calculating equity for total customer base - churn and loyal custonmer 
+
 bestand_equity_churn = dealer_jvz * total_clv_churn
 bestand_equity_loyal = dealer_jvz * total_clv_loyal
 bestand_equity_delta = bestand_equity_loyal - bestand_equity_churn
@@ -103,6 +152,49 @@ bestand_equity_delta = bestand_equity_loyal - bestand_equity_churn
 st.write(bestand_equity_churn)
 st.write(bestand_equity_loyal)
 st.write(bestand_equity_delta)
+
+
+bestand_equity_churn_y1 = dealer_jvz * total_clv_churn_y1
+bestand_equity_churn_y2 = dealer_jvz * total_clv_churn_y2
+bestand_equity_churn_y3 = dealer_jvz * total_clv_churn_y3
+bestand_equity_churn_y4 = dealer_jvz * total_clv_churn_y4
+bestand_equity_churn_y5 = dealer_jvz * total_clv_churn_y5
+bestand_equity_churn_y6 = dealer_jvz * total_clv_churn_y6
+bestand_equity_churn_y7 = dealer_jvz * total_clv_churn_y7
+bestand_equity_churn_y8 = dealer_jvz * total_clv_churn_y8
+bestand_equity_churn_y9 = dealer_jvz * total_clv_churn_y9
+bestand_equity_churn_y10 = dealer_jvz * total_clv_churn_y10
+
+
+bestand_equity_loyal_y1 = dealer_jvz * total_clv_loyal_y1
+bestand_equity_loyal_y2 = dealer_jvz * total_clv_loyal_y2
+bestand_equity_loyal_y3 = dealer_jvz * total_clv_loyal_y3
+bestand_equity_loyal_y4 = dealer_jvz * total_clv_loyal_y4
+bestand_equity_loyal_y5 = dealer_jvz * total_clv_loyal_y5
+bestand_equity_loyal_y6 = dealer_jvz * total_clv_loyal_y6
+bestand_equity_loyal_y7 = dealer_jvz * total_clv_loyal_y7
+bestand_equity_loyal_y8 = dealer_jvz * total_clv_loyal_y8
+bestand_equity_loyal_y9 = dealer_jvz * total_clv_loyal_y9
+bestand_equity_loyal_y10 = dealer_jvz * total_clv_loyal_y10
+
+
+bestand_equity_delta_y1 = dealer_jvz * total_clv_delta_y1
+bestand_equity_delta_y2 = dealer_jvz * total_clv_delta_y2
+bestand_equity_delta_y3 = dealer_jvz * total_clv_delta_y3
+bestand_equity_delta_y4 = dealer_jvz * total_clv_delta_y4
+bestand_equity_delta_y5 = dealer_jvz * total_clv_delta_y5
+bestand_equity_delta_y6 = dealer_jvz * total_clv_delta_y6
+bestand_equity_delta_y7 = dealer_jvz * total_clv_delta_y7
+bestand_equity_delta_y8 = dealer_jvz * total_clv_delta_y8
+bestand_equity_delta_y9 = dealer_jvz * total_clv_delta_y9
+bestand_equity_delta_y10 = dealer_jvz * total_clv_delta_y10
+
+
+## Calculating equity for total customer base - churn and loyal custonmer - per Year of lifetime
+
+
+
+
 
 data = [bestand_equity_churn, bestand_equity_loyal] 
 chart_data = pd.DataFrame(data)
