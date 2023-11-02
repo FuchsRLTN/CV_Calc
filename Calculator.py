@@ -75,7 +75,7 @@ st.write("")
 st.write("")
 st.write("")
 
-dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=300, step=50)
+dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=100, step=50)
 dealer_loyalty_improvement = st.slider("Kundenbindung erhöhen auf ... Jahre:", min_value=6, max_value=10, value=8, step=1)
 st.write("")
 st.divider()
@@ -204,7 +204,7 @@ st.bar_chart(data=data_peryear)
 st.write("")
 st.write("")
 
-equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt" + str(bestand_equity_delta_y10) + " Zusatzertrag"
+equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10)
 st.info(equity_upside)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
@@ -212,13 +212,13 @@ st.divider()
 st.write("")
 st.write("")
 
+st.image("https://i.postimg.cc/63MYXqSQ/HMD-Impressum.png")
 
 
 
 
 
 
-st.divider()
 
 
 ## st.dataframe(data_peryear)
