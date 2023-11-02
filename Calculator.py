@@ -198,10 +198,10 @@ data_peryear = {
     "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10],
     "Zusätzlicher Bruttoertrag": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10]
 }
+st.bar_chart(data=data_peryear)
+
 
 st.dataframe(data_peryear)
-
-
 
 data = [bestand_equity_churn, bestand_equity_loyal] 
 chart_data = pd.DataFrame(data)
