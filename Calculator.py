@@ -4,16 +4,14 @@ import pandas as pd
 
 ## App Header
 
-st.image("https://i.postimg.cc/qMBkK4nX/HMD-Header-2.png")
+st.image("https://i.postimg.cc/DwCd9dFt/HMD-H3-Kunden-1.png")
 st.write("")
 st.write("")
 
 
 ## Customer Value: Calculation
 
-
 st.image("https://i.postimg.cc/26mBKVM1/HMD-H3-Kunden.png")
-
 
 toggle_clvcalc = st.toggle('Individuell berechnen')
 st.write("")
@@ -71,7 +69,7 @@ st.write("")
 
 ## Customer Equity: Calculation
 
-st.image("https://i.postimg.cc/kg3McLk4/HMD-H3-Bestand.png")
+st.image("https://i.postimg.cc/26g0Pddz/HMD-H3-Bestand-1.png")
 st.write("")
 st.write("")
 
