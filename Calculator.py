@@ -58,8 +58,6 @@ clv_str = str(total_clv) + " Euro pro Kunde"
 st.info(clv_str)
 st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
-st.write("")
-st.write("")
 st.divider()
 st.write("")
 st.write("")
@@ -199,6 +197,26 @@ data_peryear = {
     ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
 }
 st.bar_chart(data=data_peryear)
+
+
+## Customer Equity: Result
+
+st.write("")
+st.write("")
+
+equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt" + str(bestand_equity_delta_y10) + " Zusatzertrag"
+st.info(equity_upside)
+st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
+
+st.divider()
+st.write("")
+st.write("")
+
+
+
+
+
+
 
 st.divider()
 
