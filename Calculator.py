@@ -196,7 +196,8 @@ data_peryear = {
     "Bruttoertrag V&S - Abwanderung": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
     ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
 }
-st.bar_chart(data=data_peryear)
+st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
+
 
 
 ## Customer Equity: Result
@@ -204,9 +205,9 @@ st.bar_chart(data=data_peryear)
 st.write("")
 st.write("")
 
-equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10)
+equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
 st.info(equity_upside)
-st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
+st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
 st.divider()
 st.write("")
