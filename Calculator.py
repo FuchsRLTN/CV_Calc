@@ -131,15 +131,15 @@ total_clv_loyal_y9 = sales_clv + (service_clv * 9)
 total_clv_loyal_y10 = sales_clv + (service_clv * 10)
 
 total_clv_delta_y1 = sales_clv + (service_clv * 1) - total_clv_churn_y1
-total_clv_delta_y2 = sales_clv + (service_clv * 2) - total_clv_churn_y1
-total_clv_delta_y3 = sales_clv + (service_clv * 3) - total_clv_churn_y1
-total_clv_delta_y4 = sales_clv + (service_clv * 4) - total_clv_churn_y1
-total_clv_delta_y5 = sales_clv + (service_clv * 5) - total_clv_churn_y1
-total_clv_delta_y6 = sales_clv + (service_clv * 6) - total_clv_churn_y1
-total_clv_delta_y7 = sales_clv + (service_clv * 7) - total_clv_churn_y1
-total_clv_delta_y8 = sales_clv + (service_clv * 8) - total_clv_churn_y1
-total_clv_delta_y9 = sales_clv + (service_clv * 9) - total_clv_churn_y1
-total_clv_delta_y10 = sales_clv + (service_clv * 10) - total_clv_churn_y1
+total_clv_delta_y2 = sales_clv + (service_clv * 2) - total_clv_churn_y2
+total_clv_delta_y3 = sales_clv + (service_clv * 3) - total_clv_churn_y3
+total_clv_delta_y4 = sales_clv + (service_clv * 4) - total_clv_churn_y4
+total_clv_delta_y5 = sales_clv + (service_clv * 5) - total_clv_churn_y5
+total_clv_delta_y6 = sales_clv + (service_clv * 6) - total_clv_churn_y6
+total_clv_delta_y7 = sales_clv + (service_clv * 7) - total_clv_churn_y7
+total_clv_delta_y8 = sales_clv + (service_clv * 8) - total_clv_churn_y8
+total_clv_delta_y9 = sales_clv + (service_clv * 9) - total_clv_churn_y9
+total_clv_delta_y10 = sales_clv + (service_clv * 10) - total_clv_churn_y10
 
 
 
