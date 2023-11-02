@@ -190,9 +190,15 @@ bestand_equity_delta_y9 = dealer_jvz * total_clv_delta_y9
 bestand_equity_delta_y10 = dealer_jvz * total_clv_delta_y10
 
 
-## Calculating equity for total customer base - churn and loyal custonmer - per Year of lifetime
+## Creating the data frames for bar charts
 
+data_peryear = {
+    "Jahr": ["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"],
+    "Bruttoertrag V&S - Abwanderung": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
+    "Bruttoertrag V&S - Gebunden": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10]
+}
 
+st.dataframe(data_peryear)
 
 
 
