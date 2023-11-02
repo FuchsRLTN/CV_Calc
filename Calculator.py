@@ -200,17 +200,12 @@ data_peryear = {
 }
 st.bar_chart(data=data_peryear)
 
-
-st.dataframe(data_peryear)
-
-data = [bestand_equity_churn, bestand_equity_loyal] 
-chart_data = pd.DataFrame(data)
-
-st.dataframe(data)
-
-st.bar_chart(data=chart_data)
-
 st.divider()
 
-st.write("line for new push again")
+
+## st.dataframe(data_peryear)
+## data = [bestand_equity_churn, bestand_equity_loyal] 
+## chart_data = pd.DataFrame(data)
+## st.dataframe(data)
+## st.bar_chart(data=chart_data)
 
