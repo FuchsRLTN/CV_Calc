@@ -58,7 +58,7 @@ else:
         sales_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=10, value=8, step=1)
         sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
     
-    
+
     st.divider()
     
 
@@ -234,6 +234,7 @@ data_peryear = {
     ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
 }
 
+print("**Ihr zusätzlicher ERTRAG durch längere Kundenbindung**" )
 
 ## Creating the bar chart 
 st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
