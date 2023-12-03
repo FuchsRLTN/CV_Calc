@@ -202,14 +202,6 @@ st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
 
 
 
-## Test bar chart with data in function
-
-st.bar_chart(
-    data= {
-        "Zusätzlicher Bruttoertrag": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10],
-        "Bruttoertrag V&S - Abwanderung": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10]
-    }
-    )
 
 
 
