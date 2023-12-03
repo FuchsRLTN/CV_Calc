@@ -216,15 +216,3 @@ st.write("")
 st.image("https://i.postimg.cc/63MYXqSQ/HMD-Impressum.png")
 
 
-
-
-
-
-
-
-## st.dataframe(data_peryear)
-## data = [bestand_equity_churn, bestand_equity_loyal] 
-## chart_data = pd.DataFrame(data)
-## st.dataframe(data)
-## st.bar_chart(data=chart_data)
-
