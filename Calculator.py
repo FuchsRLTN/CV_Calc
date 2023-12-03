@@ -67,9 +67,15 @@ else:
 st.write("")
 st.write("")
 
-clv_str = str(total_clv) + " Euro pro Kunde"
-st.info(clv_str)
-st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
+kunden_wert_col1_icon, kunden_wert_col2_value = st.columns([0.1, 0.9])
+
+with kunden_wert_col1_icon:
+    st. image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png")
+
+with kunden_wert_col2_value:
+    clv_str = str(total_clv) + " Euro pro Kunde"
+    st.info(clv_str)
+    st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
 
 st.divider()
 st.write("")
