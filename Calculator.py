@@ -18,9 +18,12 @@ st.write("")
 
 
 if toggle_clvcalc is False:
+
     kunden_nc_col1_icon, kunden_nc_cal2_value = st.columns([0.1, 0.9])
+    
     with kunden_nc_col1_icon:
         st.image("https://i.postimg.cc/pX3jYX6g/ICON-New-Car.png", width=50)
+    
     with kunden_nc_cal2_value:
         st.write("**Bruttoertrag pro Neuwagen:**")
         st.write("2.080 EUR")
@@ -43,16 +46,32 @@ if toggle_clvcalc is False:
     total_clv = 5776
     
 else:
-    st.write("**Bruttoertrag pro Neuwagen berechnen:**")
-    sales_avg_ncprice = st.slider("Durschnittlicher NW-Preis (in EUR) festlegen", min_value=10000, max_value=30000, value=26000, step=500)
-    sales_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=10, value=8, step=1)
-    sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
-    st.write("")
-    st.write("")
-    st.write("**Bruttoertrag im Service p.a. berechnen:**")
-    service_avg_revenue = st.slider("Durschnittlicher Umsatz L&T (p.A.; in EUR) festlegen", min_value=0, max_value=5000, value=1100, step=50)
-    service_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=100, value=42, step=1)
-    service_clv = service_avg_revenue / 100 * service_avg_margin
+
+    kunden_nc_col1_icon, kunden_nc_cal2_value = st.columns([0.1, 0.9])
+    
+    with kunden_nc_col1_icon:
+        st.image("https://i.postimg.cc/pX3jYX6g/ICON-New-Car.png", width=50)
+
+    with kunden_nc_cal2_value:   
+        st.write("**Bruttoertrag pro Neuwagen berechnen:**")
+        sales_avg_ncprice = st.slider("Durschnittlicher NW-Preis (in EUR) festlegen", min_value=10000, max_value=30000, value=26000, step=500)
+        sales_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=10, value=8, step=1)
+        sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
+    
+    
+    st.divider()
+    
+
+    kunden_as_col1_icon, kunden_as_cal2_value = st.columns([0.1, 0.9])
+
+    with kunden_as_col1_icon:
+        st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=50)
+    
+    with kunden_as_cal2_value:
+        st.write("**Bruttoertrag im Service p.a. berechnen:**")
+        service_avg_revenue = st.slider("Durschnittlicher Umsatz L&T (p.A.; in EUR) festlegen", min_value=0, max_value=5000, value=1100, step=50)
+        service_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=100, value=42, step=1)
+        service_clv = service_avg_revenue / 100 * service_avg_margin
 
     st.write(sales_clv)
     st.write(service_clv)
