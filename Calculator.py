@@ -70,7 +70,7 @@ st.write("")
 kunden_wert_col1_icon, kunden_wert_col2_value = st.columns([0.1, 0.9])
 
 with kunden_wert_col1_icon:
-    st. image("https://i.postimg.cc/x8xvSvgC/ICON-Kundenwert.png", 50)
+    st. image("https://i.postimg.cc/x8xvSvgC/ICON-Kundenwert.png", width=50)
 
 with kunden_wert_col2_value:
     clv_str = str(total_clv) + " Euro p. Kunde"
