@@ -20,7 +20,7 @@ st.write("")
 if toggle_clvcalc is False:
     kunden_nc_col1_icon, kunden_nc_cal2_value = st.columns([0.1, 0.9])
     with kunden_nc_col1_icon:
-        st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=50)
+        st.image("https://i.postimg.cc/pX3jYX6g/ICON-New-Car.png", width=50)
     with kunden_nc_cal2_value:
         st.write("**Bruttoertrag pro Neuwagen:**")
         st.write("2.080 EUR")
@@ -70,12 +70,12 @@ st.write("")
 kunden_wert_col1_icon, kunden_wert_col2_value = st.columns([0.1, 0.9])
 
 with kunden_wert_col1_icon:
-    st. image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png")
+    st. image("https://i.postimg.cc/x8xvSvgC/ICON-Kundenwert.png", 50)
 
 with kunden_wert_col2_value:
-    clv_str = str(total_clv) + " Euro pro Kunde"
+    clv_str = str(total_clv) + " Euro p. Kunde"
     st.info(clv_str)
-    st.caption("Durchschnittlicher Ertrag erwirtschaftet pro Kunde nach 8 Jahren")
+    st.caption("Durchschnittlicher Ertrag pro Kunde und 8 Jahren Bindung")
 
 st.divider()
 st.write("")
