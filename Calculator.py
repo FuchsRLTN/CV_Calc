@@ -20,19 +20,17 @@ st.write("")
 if toggle_clvcalc is False:
     kunden_nc_col1_icon, kunden_nc_cal2_value = st.columns([0.1, 0.9])
     with kunden_nc_col1_icon:
-        st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=50)
+        st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width= 50)
     with kunden_nc_cal2_value:
         st.write("**Bruttoertrag pro Neuwagen:**")
         st.write("2.080 EUR (26.000 € x 8%)")
 
-    st.write("")
     st.divider()
-    st.write("")
 
 
     kunden_as_col1_icon, kunden_as_cal2_value = st.columns([0.1, 0.9])
     with kunden_as_col1_icon:
-        st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png")
+        st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width= 50)
     with kunden_as_cal2_value:
         st.write("**Bruttoertrag im Service p. a.:**")
         st.write("462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
