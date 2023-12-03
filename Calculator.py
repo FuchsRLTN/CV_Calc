@@ -34,7 +34,8 @@ if toggle_clvcalc is False:
         st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=50)
     with kunden_as_cal2_value:
         st.write("**Bruttoertrag im Service p. a.:**")
-        st.write("462 € (ca. 1.100 € Umsatz Lohn + Teile x 42%)")
+        st.write("462 €")
+        st.caption("(ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
 
     sales_clv = 2080
