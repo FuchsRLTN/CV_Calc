@@ -198,7 +198,7 @@ data_peryear = {
 
 
 ## Creating the bar chart 
-st.bar_chart(data=data_peryear, colour=["#002B5E", "#00AAD2"])
+st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
 
 
 
