@@ -18,7 +18,7 @@ st.write("")
 
 
 if toggle_clvcalc is False:
-    kunden_nc_col1_icon, kunden_nc_cal2_value = st.columns(2, [0.2, 0.8])
+    kunden_nc_col1_icon, kunden_nc_cal2_value = st.columns([0.2, 0.8])
     with kunden_nc_col1_icon:
         st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=50)
     with kunden_nc_cal2_value:
