@@ -18,7 +18,7 @@ st.write("")
 
 
 if toggle_clvcalc is False:
-    st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=20)
+    st.image("https://i.postimg.cc/DmVJ7SrL/ICON-Test.png", width=100)
     st.write("**Bruttoertrag pro Neuwagen:**")
     st.write("2.080 EUR (26.000 € x 8%)")
     st.write("")
