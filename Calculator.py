@@ -254,6 +254,34 @@ equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzert
 st.info(equity_upside)
 st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
+
+
+
+
+st.write("")
+st.write("")
+
+kundenbestand_wert_col1_icon, kundenbestand_wert_col2_value = st.columns([0.1, 0.9])
+
+with kundenbestand_wert_col1_icon:
+    st. image("https://i.postimg.cc/rs7p9wMh/ICON-Kundenwert-1.png", width=50)
+
+with kundenbestand_wert_col2_value:
+    clv_str = str(total_clv) + " Euro p. Kunde"
+    st.info(clv_str)
+    st.caption("Durchschnittlicher Ertrag pro Kunde und 8 Jahren Bindung")
+
+st.divider()
+st.write("")
+st.write("")
+
+
+
+
+
+## Footer
+
+
 st.divider()
 st.write("")
 st.write("")
