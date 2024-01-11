@@ -243,7 +243,7 @@ st.image("https://i.postimg.cc/63MYXqSQ/HMD-Impressum.png")
 
 
 
-st.metric("Wenn Sie" str(dealer_jvz) + " Kunden länger binden ergibt sich einen Zusatzertrag von: ", bestand_equity_delta_y10, delta=None, delta_color="normal", help=None, label_visibility="visible")
+st.metric("Wenn Sie Kunden länger binden ergibt sich einen Zusatzertrag von: ", bestand_equity_delta_y10, delta=None, delta_color="normal", help=None, label_visibility="visible")
 
 ## Creating the data frames for bar chart
 
