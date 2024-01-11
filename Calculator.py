@@ -276,9 +276,9 @@ with kundenbestand_wert_col1_icon:
 
 with kundenbestand_wert_col2_value:
     st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=150)
-    clv_str = str(total_clv) + " Euro p. Kunde"
-    st.info(clv_str)
-    st.caption("Durchschnittlicher Ertrag pro Kunde und 8 Jahren Bindung")
+    equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
+    st.info(equity_upside)
+    st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
 st.divider()
 st.write("")
