@@ -123,8 +123,6 @@ st.write("")
 st.write("")
 
 ## Config Dealer Data
-st.write("")
-st.write("")
 
 dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=100, step=50)
 dealer_loyalty_improvement = st.slider("Kundenbindung erhöhen auf ... Jahre:", min_value=6, max_value=10, value=8, step=1)
@@ -254,7 +252,7 @@ with kundenbestand_wert_col1_icon:
     st. image("https://i.postimg.cc/P5rFGy7x/ICON-Kundenwert-4.png", width=50)
 
 with kundenbestand_wert_col2_value:
-    st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=150)
+    st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=130)
     equity_upside = str(dealer_jvz) + " Kunden eines Verkaufsjahres länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + " Euro"
     st.info(equity_upside)
     st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
