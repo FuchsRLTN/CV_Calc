@@ -30,7 +30,10 @@ if toggle_clvcalc is False:
         st.write("2.080 EUR")
         st.caption("(26.000 € x 8%)")
 
-    
+    st.write("")
+    st.write("")
+    st.write("")
+    st.write("")
 
 
     kunden_as_col1_icon, kunden_as_cal2_value = st.columns([0.1, 0.9])
@@ -59,9 +62,10 @@ else:
         sales_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=10, value=8, step=1)
         sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
     
-
-    
-    
+    st.write("")
+    st.write("")
+    st.write("")
+    st.write("")
 
     kunden_as_col1_icon, kunden_as_cal2_value = st.columns([0.1, 0.9])
 
@@ -125,7 +129,9 @@ st.write("")
 dealer_jvz = st.slider("JVZ eingeben:", min_value=1, max_value=1000, value=100, step=50)
 dealer_loyalty_improvement = st.slider("Kundenbindung erhöhen auf ... Jahre:", min_value=6, max_value=10, value=8, step=1)
 st.write("")
-st.divider()
+st.write("")
+st.write("")
+st.write("")
 
 ## st.write(sales_clv)
 ## st.write(service_clv)
