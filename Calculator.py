@@ -15,6 +15,7 @@ st.image("https://i.postimg.cc/DwCd9dFt/HMD-H3-Kunden-1.png")
 
 toggle_clvcalc = st.toggle('Individuell berechnen')
 st.write("")
+st.write("")
 
 
 if toggle_clvcalc is False:
