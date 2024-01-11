@@ -234,23 +234,6 @@ bestand_equity_delta_y9 = dealer_jvz * total_clv_delta_y9
 bestand_equity_delta_y10 = dealer_jvz * total_clv_delta_y10
 
 
-## Creating the data frames for bar chart
-
-data_peryear = {
-    ## "Jahr": ["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"],
-    "Bruttoertrag V&S - Abwanderung": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
-    "Zusätzlicher Bruttoertrag": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10],
-    ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
-}
-
-print("**Ihr zusätzlicher ERTRAG durch längere Kundenbindung**" )
-
-## Creating the bar chart 
-st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
-
-
-
-
 
 
 ## Customer Equity: Result
@@ -270,9 +253,30 @@ with kundenbestand_wert_col2_value:
     st.info(equity_upside)
     st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
-st.divider()
+
 st.write("")
 st.write("")
+
+
+## Creating the data frames for bar chart
+
+data_peryear = {
+    ## "Jahr": ["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"],
+    "Bruttoertrag V&S - Abwanderung": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
+    "Zusätzlicher Bruttoertrag": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10],
+    ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
+}
+
+st.write("**Ihr Zusatzertrag nach Jahren**" )
+
+
+
+## Creating the bar chart 
+st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
+
+
+
+
 
 
 
@@ -281,7 +285,6 @@ st.write("")
 ## Footer
 
 
-st.divider()
 st.write("")
 st.write("")
 
