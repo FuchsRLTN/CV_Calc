@@ -41,9 +41,9 @@ if toggle_clvcalc is False:
         st.caption("(ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
 
-    ## sales_clv = 2080
-    ## service_clv = 462
-    ## total_clv = 5776
+    sales_clv = 2080
+    service_clv = 462
+    total_clv = 5776
     
 else:
 
@@ -225,23 +225,6 @@ bestand_equity_delta_y9 = dealer_jvz * total_clv_delta_y9
 bestand_equity_delta_y10 = dealer_jvz * total_clv_delta_y10
 
 
-
-## Customer Equity: Result
-
-st.write("")
-st.write("")
-
-equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt sich einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
-st.info(equity_upside)
-st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
-
-st.divider()
-st.write("")
-st.write("")
-
-st.image("https://i.postimg.cc/63MYXqSQ/HMD-Impressum.png")
-
-
 ## Creating the data frames for bar chart
 
 data_peryear = {
@@ -260,3 +243,18 @@ st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
 
 
 
+
+## Customer Equity: Result
+
+st.write("")
+st.write("")
+
+equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
+st.info(equity_upside)
+st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
+
+st.divider()
+st.write("")
+st.write("")
+
+st.image("https://i.postimg.cc/63MYXqSQ/HMD-Impressum.png")
