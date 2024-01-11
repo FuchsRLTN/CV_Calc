@@ -30,7 +30,7 @@ if toggle_clvcalc is False:
         st.write("2.080 EUR")
         st.caption("(26.000 € x 8%)")
 
-    st.divider()
+    
 
 
     kunden_as_col1_icon, kunden_as_cal2_value = st.columns([0.1, 0.9])
@@ -60,7 +60,7 @@ else:
         sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
     
 
-    st.divider()
+    
     
 
     kunden_as_col1_icon, kunden_as_cal2_value = st.columns([0.1, 0.9])
