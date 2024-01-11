@@ -254,6 +254,8 @@ with kundenbestand_wert_col2_value:
     st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
 
+
+
 st.write("")
 st.write("")
 
