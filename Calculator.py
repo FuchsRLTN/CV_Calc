@@ -106,6 +106,8 @@ with kunden_wert_col2_value:
 st.divider()
 st.write("")
 st.write("")
+st.write("")
+st.write("")
 
 
 
