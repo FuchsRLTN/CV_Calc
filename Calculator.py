@@ -255,16 +255,6 @@ st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
 
 ## Customer Equity: Result
 
-st.write("")
-st.write("")
-
-equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
-st.info(equity_upside)
-st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
-
-
-
-
 
 st.write("")
 st.write("")
@@ -276,7 +266,7 @@ with kundenbestand_wert_col1_icon:
 
 with kundenbestand_wert_col2_value:
     st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=150)
-    equity_upside = str(dealer_jvz) + " Kunden länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
+    equity_upside = str(dealer_jvz) + " Kunden eines Verkaufsjahres länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + " Euro"
     st.info(equity_upside)
     st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
