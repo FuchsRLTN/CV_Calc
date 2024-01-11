@@ -74,8 +74,8 @@ else:
         service_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=100, value=42, step=1)
         service_clv = service_avg_revenue / 100 * service_avg_margin
 
-    st.write(sales_clv)
-    st.write(service_clv)
+    ## st.write(sales_clv)
+    ## st.write(service_clv)
 
     lifetime = 8
     total_clv = sales_clv + (lifetime * service_clv)
