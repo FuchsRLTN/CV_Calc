@@ -231,7 +231,7 @@ bestand_equity_delta_y10 = dealer_jvz * total_clv_delta_y10
 st.write("")
 st.write("")
 
-equity_upside = "Wenn Sie" str(dealer_jvz) + " Kunden länger binden ergibt sich einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
+equity_upside = "Wenn Sie" + str(dealer_jvz) + " Kunden länger binden ergibt sich einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + "Euro"
 st.info(equity_upside)
 st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
@@ -241,9 +241,6 @@ st.write("")
 
 st.image("https://i.postimg.cc/63MYXqSQ/HMD-Impressum.png")
 
-
-
-st.metric("Wenn Sie Kunden länger binden ergibt sich einen Zusatzertrag von: ", bestand_equity_delta_y10, delta=None, delta_color="normal", help=None, label_visibility="visible")
 
 ## Creating the data frames for bar chart
 
