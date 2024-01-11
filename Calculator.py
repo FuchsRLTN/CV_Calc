@@ -275,6 +275,7 @@ with kundenbestand_wert_col1_icon:
     st. image("https://i.postimg.cc/P5rFGy7x/ICON-Kundenwert-4.png", width=50)
 
 with kundenbestand_wert_col2_value:
+    st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=150)
     clv_str = str(total_clv) + " Euro p. Kunde"
     st.info(clv_str)
     st.caption("Durchschnittlicher Ertrag pro Kunde und 8 Jahren Bindung")
