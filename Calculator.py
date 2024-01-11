@@ -41,9 +41,9 @@ if toggle_clvcalc is False:
         st.caption("(ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
 
-    ## sales_clv = 2080
-    ## service_clv = 462
-    ## total_clv = 5776
+    sales_clv = 2080
+    service_clv = 462
+    total_clv = 5776
     
 else:
 
