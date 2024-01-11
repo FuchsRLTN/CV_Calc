@@ -86,6 +86,8 @@ else:
 
 st.write("")
 st.write("")
+st.write("")
+st.write("")
 
 kunden_wert_col1_icon, kunden_wert_col2_value = st.columns([0.1, 0.9])
 
