@@ -27,8 +27,8 @@ if toggle_clvcalc is False:
     
     with kunden_nc_cal2_value:
         st.write("**Bruttoertrag pro Neuwagen:**")
-        st.write("2.080 EUR")
-        st.caption("(26.000 € x 8%)")
+        st.write("2.864 EUR")
+        st.caption("(35.800 € x 8%)")
 
     st.write("")
     st.write("")
@@ -45,9 +45,9 @@ if toggle_clvcalc is False:
         st.caption("(ca. 1.100 € Umsatz Lohn + Teile x 42%)")
 
 
-    sales_clv = 2080
+    sales_clv = 2864
     service_clv = 462
-    total_clv = 5776
+    total_clv = 6560
     
 else:
 
