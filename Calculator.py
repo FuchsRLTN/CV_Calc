@@ -161,11 +161,32 @@ total_clv_churn_y2 = sales_clv + (service_clv * 2)
 total_clv_churn_y3 = sales_clv + (service_clv * 3)
 total_clv_churn_y4 = sales_clv + (service_clv * 4)
 total_clv_churn_y5 = sales_clv + (service_clv * 5)
-total_clv_churn_y6 = sales_clv + (service_clv * 5)
-total_clv_churn_y7 = sales_clv + (service_clv * 5)
-total_clv_churn_y8 = sales_clv + (service_clv * 5)
-total_clv_churn_y9 = sales_clv + (service_clv * 5)
-total_clv_churn_y10 = sales_clv + (service_clv * 5)
+if lifetime_loyal > 5:
+    total_clv_churn_y6 = sales_clv + (service_clv * 5)
+else:
+    total_clv_churn_y6 = 0
+
+if lifetime_loyal > 6:
+    total_clv_churn_y7 = sales_clv + (service_clv * 5)
+else:
+    total_clv_churn_y7 = 0 
+
+if lifetime_loyal > 7:
+    total_clv_churn_y8 = sales_clv + (service_clv * 5)
+else:
+    total_clv_churn_y8 = 0 
+
+if lifetime_loyal > 8:
+    total_clv_churn_y9 = sales_clv + (service_clv * 5)
+else:
+    total_clv_churn_y9 = 0
+
+if lifetime_loyal > 9:
+    total_clv_churn_y10 = sales_clv + (service_clv * 5)
+else:
+    total_clv_churn_y10 = 0
+
+    
 
 total_clv_loyal_y1 = sales_clv + (service_clv * 1)
 total_clv_loyal_y2 = sales_clv + (service_clv * 2)
