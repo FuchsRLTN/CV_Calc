@@ -186,7 +186,7 @@ if lifetime_loyal > 9:
 else:
     total_clv_churn_y10 = 0
 
-    
+
 
 total_clv_loyal_y1 = sales_clv + (service_clv * 1)
 total_clv_loyal_y2 = sales_clv + (service_clv * 2)
@@ -220,7 +220,7 @@ if lifetime_loyal > 8:
     total_clv_delta_y9 = sales_clv + (service_clv * 9) - total_clv_churn_y9
 else:
     total_clv_delta_y9 = 0
-if lifetime_loyal > 8:
+if lifetime_loyal > 9:
     total_clv_delta_y10 = sales_clv + (service_clv * 10) - total_clv_churn_y10
 else:
     total_clv_delta_y10 = 0
