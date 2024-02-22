@@ -58,7 +58,7 @@ else:
 
     with kunden_nc_cal2_value:   
         st.write("**Bruttoertrag pro Neuwagen berechnen:**")
-        sales_avg_ncprice = st.slider("Durschnittlicher NW-Preis (in EUR) festlegen", min_value=10000, max_value=30000, value=26000, step=500)
+        sales_avg_ncprice = st.slider("Durschnittlicher NW-Preis (in EUR) festlegen", min_value=10000, max_value=40000, value=35800, step=100)
         sales_avg_margin = st.slider("Durchschnittliche Marge (%) festlegen", min_value=1, max_value=10, value=8, step=1)
         sales_clv = sales_avg_ncprice / 100 * sales_avg_margin
     
