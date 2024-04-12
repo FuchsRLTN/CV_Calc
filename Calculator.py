@@ -304,22 +304,22 @@ else:
 
 ## Customer Equity: Result depending on loyality improvement
 
-if total_clv_delta_y10 > 0:
-    bestand_equity_delta_dynamic = total_clv_delta_y10
+if bestand_equity_delta_y10 > 0:
+    bestand_equity_delta_dynamic = bestand_equity_delta_y10
 else:
-    if total_clv_delta_y9 > 0:
-        bestand_equity_delta_dynamic = total_clv_delta_y9
+    if bestand_equity_delta_y9 > 0:
+        bestand_equity_delta_dynamic = bestand_equity_delta_y9
     else:
-        if total_clv_delta_y8 > 0:
-            bestand_equity_delta_dynamic = total_clv_delta_y8
+        if bestand_equity_delta_y8 > 0:
+            bestand_equity_delta_dynamic = bestand_equity_delta_y8
         else:
-            if total_clv_delta_y7 > 0:
-                bestand_equity_delta_dynamic = total_clv_delta_y7
+            if bestand_equity_delta_y7 > 0:
+                bestand_equity_delta_dynamic = bestand_equity_delta_y7
             else:
-                if total_clv_churn_y6 > 0:
-                    bestand_equity_delta_dynamic = total_clv_churn_y6
+                if bestand_equity_delta_y6 > 0:
+                    bestand_equity_delta_dynamic = bestand_equity_delta_y6
                 else:
-                    bestand_equity_delta_dynamic = total_clv_churn_y5
+                    bestand_equity_delta_dynamic = bestand_equity_delta_y5
 
 
 st.write(bestand_equity_delta_dynamic)
