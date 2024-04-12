@@ -360,9 +360,9 @@ st.write("**Ihr Zusatzertrag nach Jahren**" )
 
 
 ## Creating the bar chart 
-st.bar_chart(data=data_peryear, x=["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"],color=["#002B5E", "#00AAD2"])
+st.bar_chart(data=data_peryear, color=["#002B5E", "#00AAD2"])
 
-
+## x=["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"],
 
 
 
