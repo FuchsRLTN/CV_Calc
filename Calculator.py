@@ -339,7 +339,7 @@ with kundenbestand_wert_col2_value:
     st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=130)
     equity_upside = str(dealer_jvz) + " Kunden eines Verkaufsjahres länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_dynamic) + " Euro"
     st.info(equity_upside)
-    st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
+    st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ).")
 
 
 
@@ -349,7 +349,7 @@ with kundenbestand_wert_col2_value:
 ## Creating the data frames for bar chart
 
 data_peryear = {
-    "Jahr": ["01.Jahr", "02.Jahr", "03.Jahr","04.Jahr", "05.Jahr", "06.Jahr","07.Jahr", "08.Jahr", "09.Jahr","10.Jahr"],
+    "Jahr": ["01. Jahr", "02. Jahr", "03. Jahr","04. Jahr", "05. Jahr", "06. Jahr","07. Jahr", "08. Jahr", "09. Jahr","10. Jahr"],
     "Bruttoertrag Vertrieb & Service": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
     "Zusätzlicher Bruttoertrag": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10],
     ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
