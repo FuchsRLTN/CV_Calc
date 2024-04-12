@@ -323,6 +323,7 @@ else:
 
 
 st.write(bestand_equity_delta_dynamic)
+st.write(total_clv_delta_y7)
 
 ## Customer Equity: Result
 
