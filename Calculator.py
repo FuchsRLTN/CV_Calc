@@ -321,8 +321,7 @@ else:
                     bestand_equity_delta_dynamic = bestand_equity_delta_y5
 
 
-st.write(bestand_equity_delta_dynamic)
-st.write(total_clv_delta_y7)
+
 
 ## Customer Equity: Result
 
