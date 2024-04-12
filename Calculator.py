@@ -320,9 +320,9 @@ else:
                     bestand_equity_delta_dynamic = total_clv_churn_y6
                 else:
                     bestand_equity_delta_dynamic = total_clv_churn_y5
-                    
 
 
+print (bestand_equity_delta_dynamic)
 
 ## Customer Equity: Result
 
