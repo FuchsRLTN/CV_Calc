@@ -275,8 +275,56 @@ bestand_equity_delta_y10 = dealer_jvz * total_clv_delta_y10
 
 
 
-## Customer Equity: Result
 
+
+if lifetime_loyal > 5:
+    total_clv_delta_y6 = sales_clv + (service_clv * 6) - total_clv_churn_y6
+else:
+    total_clv_delta_y6 = 0
+if lifetime_loyal > 6:
+    total_clv_delta_y7 = sales_clv + (service_clv * 7) - total_clv_churn_y7
+else:
+    total_clv_delta_y7 = 0
+if lifetime_loyal > 7:
+    total_clv_delta_y8 = sales_clv + (service_clv * 8) - total_clv_churn_y8
+else:
+    total_clv_delta_y8 = 0
+if lifetime_loyal > 8:
+    total_clv_delta_y9 = sales_clv + (service_clv * 9) - total_clv_churn_y9
+else:
+    total_clv_delta_y9 = 0
+if lifetime_loyal > 9:
+    total_clv_delta_y10 = sales_clv + (service_clv * 10) - total_clv_churn_y10
+else:
+    total_clv_delta_y10 = 0
+
+
+
+
+
+## Customer Equity: Result depending on loyality improvement
+
+if total_clv_delta_y10 > 0:
+    bestand_equity_delta_dynamic = total_clv_delta_y10
+else:
+    if total_clv_delta_y9 > 0:
+        bestand_equity_delta_dynamic = total_clv_delta_y9
+    else:
+        if total_clv_delta_y8 > 0:
+            bestand_equity_delta_dynamic = total_clv_delta_y8
+        else:
+            if total_clv_delta_y7 > 0:
+                bestand_equity_delta_dynamic = total_clv_delta_y7
+            else:
+                if total_clv_churn_y6 > 0:
+                    bestand_equity_delta_dynamic = total_clv_churn_y6
+                else:
+                    bestand_equity_delta_dynamic = total_clv_churn_y5
+                    
+
+
+
+## Customer Equity: Result
 
 st.write("")
 st.write("")
@@ -288,7 +336,7 @@ with kundenbestand_wert_col1_icon:
 
 with kundenbestand_wert_col2_value:
     st. image("https://i.postimg.cc/mrQsk8bs/image-43.png", width=130)
-    equity_upside = str(dealer_jvz) + " Kunden eines Verkaufsjahres länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_y10) + " Euro"
+    equity_upside = str(dealer_jvz) + " Kunden eines Verkaufsjahres länger binden ergibt einen Zusatzertrag von: " + str(bestand_equity_delta_dynamic) + " Euro"
     st.info(equity_upside)
     st.caption("Errechnet auf Basis der o.g. Werten und dem Jahresverkaufsziel (JVZ). Erwirtschaftet bei einer Bindung über 5 zusätzlichen Jahren")
 
@@ -303,7 +351,7 @@ st.write("")
 
 data_peryear = {
     ## "Jahr": ["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"],
-    "Bruttoertrag V&S - Abwanderung": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
+    "Bruttoertrag Vertrieb & Service": [bestand_equity_churn_y1, bestand_equity_churn_y2, bestand_equity_churn_y3, bestand_equity_churn_y4, bestand_equity_churn_y5, bestand_equity_churn_y6, bestand_equity_churn_y7, bestand_equity_churn_y8, bestand_equity_churn_y9, bestand_equity_churn_y10],
     "Zusätzlicher Bruttoertrag": [bestand_equity_delta_y1, bestand_equity_delta_y2, bestand_equity_delta_y3, bestand_equity_delta_y4, bestand_equity_delta_y5, bestand_equity_delta_y6, bestand_equity_delta_y7, bestand_equity_delta_y8, bestand_equity_delta_y9, bestand_equity_delta_y10],
     ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
 }
