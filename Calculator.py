@@ -322,7 +322,7 @@ else:
                     bestand_equity_delta_dynamic = total_clv_churn_y5
 
 
-print (bestand_equity_delta_dynamic)
+st.write(bestand_equity_delta_dynamic)
 
 ## Customer Equity: Result
 
