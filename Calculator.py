@@ -371,7 +371,7 @@ st.bar_chart(data=data_peryear, x="Jahr", color=["#002B5E", "#00AAD2"])
 kundenbestand_bar_col1_empty, kundenbestand_bar_col2_chart = st.columns([0.1, 0.9])
 
 with kundenbestand_bar_col1_empty:
-    st. image("https://i.postimg.cc/P5rFGy7x/ICON-Kundenwert-4.png", width=50)
+    
 
 with kundenbestand_bar_col2_chart:
     st.bar_chart(data=data_peryear, x="Jahr", color=["#002B5E", "#00AAD2"])
