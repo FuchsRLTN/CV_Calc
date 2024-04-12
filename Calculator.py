@@ -355,7 +355,7 @@ data_peryear = {
     ## "Bruttoertrag V&S - Gebunden": [bestand_equity_loyal_y1, bestand_equity_loyal_y2, bestand_equity_loyal_y3, bestand_equity_loyal_y4, bestand_equity_loyal_y5, bestand_equity_loyal_y6, bestand_equity_loyal_y7, bestand_equity_loyal_y8, bestand_equity_loyal_y9, bestand_equity_loyal_y10]
 }
 
-data_year = {["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"]}
+## data_year = {["1.Jahr", "2.Jahr", "3.Jahr","4.Jahr", "5.Jahr", "6.Jahr","7.Jahr", "8.Jahr", "9.Jahr","10.Jahr"]}
 
 
 st.write("**Ihr Zusatzertrag nach Jahren**" )
@@ -363,7 +363,7 @@ st.write("**Ihr Zusatzertrag nach Jahren**" )
 
 
 ## Creating the bar chart 
-st.bar_chart(data=data_peryear, x= data_year,  color=["#002B5E", "#00AAD2"])
+st.bar_chart(data=data_peryear, x="data_year" ,  color=["#002B5E", "#00AAD2"])
 
 
 
