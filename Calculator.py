@@ -341,7 +341,10 @@ with kundenbestand_wert_col2_value:
 
 
 
-
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 
 
 ## Creating the data frames for bar chart
