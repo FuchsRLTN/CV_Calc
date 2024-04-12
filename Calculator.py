@@ -131,8 +131,7 @@ st.write("")
 st.write("")
 st.write("")
 
-## st.write(sales_clv)
-## st.write(service_clv)
+
 
 
 
